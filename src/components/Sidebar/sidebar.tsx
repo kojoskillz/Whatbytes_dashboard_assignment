@@ -6,9 +6,9 @@ const sidebar = () => {
   return (
     <div>
         {/* main sidebar content */}
-            <div  className='overflow-y-scroll sticky top-4 h-[calc(100vh-32px-48px) ] '>
+            <div  className='overflow-y-hidden sticky top-4 h-[calc(100vh-32px-48px) ] '>
                   <div className='flex gap-2'>
-                  <Image src={img} alt="" className='w-24 h-20 object-fit rounded-full' />
+                  <Image src={img} alt="" className='w-10 h-10 object-fit rounded-full' />
                         <h1 className='text-black text-[18px]  font-bold'>
                            Kwadwo Nyarko
                         </h1>
