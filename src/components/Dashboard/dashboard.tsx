@@ -19,15 +19,18 @@ import img4 from '../assets/clipboard.png';
 
 const dashboard = () => {
   return (
-    <div>
+    <div className=''>
 
 {/* first container */}
-    <div className='bg-white font-semibold rounded-lg pb-5 shadow- h-[200vh]'>
+    <div className='bg-white font-semibold rounded-lg pb-5 shadow h-[120vh] '>
      <div className='m-5 text-gray-500'>
         <h1>
           Skill Test
         </h1>
      </div>
+
+<div className='1fr grid grid-cols-2 md:grid sm:grid '>
+
 
 
     <div  className='m-5 border-2 rounded-md p-6 gap-5 w-[632px] border-gray-500/5 flex ' >
@@ -161,7 +164,7 @@ const dashboard = () => {
 
         {/* section2 */}
         <div className='m-5 border-2 rounded-md p-6 gap-5 w-[632px] border-gray-500/5 '>
-            <h1 className='font-bold'>
+            <h1 className='font-bold   ml-10'>
                 Syllabus Wise Analysis
             </h1>
 
@@ -170,34 +173,53 @@ const dashboard = () => {
 <div className="">
 
   <div className="body">
-    <div className="skill">
-      <div className="skill-name">HTML Tools, Forms, History</div>
-      <div className="skill-level">
-        <div className="skill-percent" style={{width: '90%'}}></div>
-      </div>
-      <div className="skill-percent-number">90%</div>
+
+    <div className="skill grid">
+       <div className="skill-name text-gray-500 ml-5 mb-4">HTML Tools, Forms, History</div>
     </div>
-    <div className="skill">
-      <div className="skill-name">Tags & References in HTML</div>
-      <div className="skill-level">
-        <div className="skill-percent" style={{width: '0%'}}></div>
+    <div className='flex'>
+      <div className="skill-level bg-blue-50">
+        <div className="skill-percent rounded-full bg-blue-500" style={{width: '80%'}}></div>
       </div>
-      <div className="skill-percent-number">80%</div>
+      <div className="skill-percent-number text-blue-500 mt-[-10px]">80%</div>
     </div>
-    <div className="skill">
-      <div className="skill-name">Tables & References in HTML</div>
-      <div className="skill-level">
-        <div className="skill-percent" style={{width: '75%'}}></div>
+
+    <div className="skill grid">
+       <div className="skill-name text-gray-500 ml-5 mb-4">Tags & References in HTML</div>
+    </div>
+    <div className='flex'>
+      <div className="skill-level bg-orange-50">
+        <div className="skill-percent rounded-full bg-orange-500 " style={{width: '60%'}}></div>
       </div>
-      <div className="skill-percent-number">75%</div>
+      <div className="skill-percent-number text-orange-500 mt-[-10px]">60%</div>
     </div>
-    <div className="skill">
-      <div className="skill-name">Tables & CSS Basics</div>
-      <div className="skill-level">
-        <div className="skill-percent" style={{width: '75%'}}></div>
+
+    <div className="skill grid">
+       <div className="skill-name text-gray-500 ml-5 mb-4">Tables & References in HTML</div>
+    </div>
+    <div className='flex'>
+      <div className="skill-level bg-red-50">
+        <div className="skill-percent rounded-full bg-red-500" style={{width: '24%'}}></div>
       </div>
-      <div className="skill-percent-number">75%</div>
+      <div className="skill-percent-number text-red-500 mt-[-10px]">24%</div>
     </div>
+
+    <div className="skill grid">
+       <div className="skill-name text-gray-500 ml-5 mb-4">Tables & CSS Basics</div>
+    </div>
+    <div className='flex'>
+      <div className="skill-level bg-green-50">
+        <div className="skill-percent rounded-full bg-green-500 " style={{width: '96%'}}></div>
+      </div>
+      <div className="skill-percent-number text-green-500 mt-[-10px]">96%</div>
+    </div>
+
+
+
+
+    </div>
+    
+    
   </div>
 </div>
 
